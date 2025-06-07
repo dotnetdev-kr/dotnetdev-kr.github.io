@@ -1,21 +1,21 @@
 ---
 layout: default
-title: 리소스 - .NET 개발자 모임
-description: .NET 개발자 모임에서 제공하는 리소스 모음
+title: 리소스
+description: 닷넷데브에서 제공하는 리소스 모음
 ---
 
-이 페이지에서는 .NET 개발자 모임에서 제공하는 다양한 리소스를 찾고 다운로드할 수 있습니다.
+이 페이지에서는 닷넷데브에서 제공하는 다양한 리소스 (Organization Identity, Design Resource, Emblem 등) 를 찾고 다운로드할 수 있습니다.
 
 ## 로고 및 이미지
 
 | 리소스 | 설명 | 다운로드 링크 |
 |--------|------|--------------|
-| ![로고 미리보기](/resources/dotnetdev-logo.png) | .NET 개발자 모임 로고 (PNG) | [다운로드](/resources/dotnetdev-logo.png) |
-| .NET 개발자 모임 로고 (SVG) | 벡터 형식의 로고 | [다운로드](/resources/dotnetdev-logo.svg) |
-| .NET 개발자 모임 로고 (Adobe Illustrator CS5) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs5.ai) |
-| .NET 개발자 모임 로고 (Adobe Illustrator CS6) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs6.ai) |
-| .NET 개발자 모임 로고 (EMF) | Windows Enhanced Metafile 형식 | [다운로드](/resources/dotnetdev-logo.emf) |
-| .NET 히어로 이미지 | .NET 개발자 모임 커버 이미지 | [다운로드](/resources/dotnet_hero.jpg) |
+| [로고 이미지 파일 (PNG)](/resources/dotnetdev-logo.png) | 닷넷데브 로고 (PNG) | [다운로드](/resources/dotnetdev-logo.png) |
+| 닷넷데브 로고 (SVG) | 벡터 형식의 로고 | [다운로드](/resources/dotnetdev-logo.svg) |
+| 닷넷데브 로고 (Adobe Illustrator CS5) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs5.ai) |
+| 닷넷데브 로고 (Adobe Illustrator CS6) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs6.ai) |
+| 닷넷데브 로고 (EMF) | Windows Enhanced Metafile 형식 | [다운로드](/resources/dotnetdev-logo.emf) |
+| .NET 히어로 이미지 | 닷넷데브 커버 이미지 | [다운로드](/resources/dotnet_hero.jpg) |
 | 카드 이미지 | 소셜 미디어용 카드 이미지 | [다운로드](/card.jpg) |
 
 ## 파비콘
@@ -68,4 +68,4 @@ description: .NET 개발자 모임에서 제공하는 리소스 모음
 
 - [크레딧](/resources/credits.txt)
 
-위 리소스들은 .NET 개발자 모임의 정책에 따라 제공됩니다. 사용 시 출처를 명시해 주시기 바랍니다.
+위 리소스들은 닷넷데브의 정책에 따라 제공됩니다. 사용 시 출처를 명시해 주시기 바랍니다.
