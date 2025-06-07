@@ -2,3 +2,11 @@ theme: jekyll-theme-slate
 title: 닷넷데브 홈페이지
 description: 닷넷데브 홈페이지입니다.
 url: https://dotnetdev.kr
+
+# 글로벌 설정
+defaults:
+  -
+    scope:
+      path: "" # 모든 파일에 적용
+    values:
+      layout: "default" # 모든 파일에 default 레이아웃 적용

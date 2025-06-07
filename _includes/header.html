@@ -1,0 +1,55 @@
+<div class="site-header">
+  <nav class="site-nav">
+    <div class="nav-links">
+      <a href="/" class="nav-link">홈</a>
+      <a href="/organizers/" class="nav-link">운영진</a>
+      <a href="/meetings/" class="nav-link">모임</a>
+      <a href="/finance/" class="nav-link">재무현황</a>
+      <a href="/legal/" class="nav-link">법규</a>
+      <a href="/coc/" class="nav-link">행동강령</a>
+    </div>
+  </nav>
+</div>
+
+<style>
+.site-header {
+  background-color: #0078d7; /* Microsoft .NET 색상 */
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.site-nav {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+  }
+  
+  .nav-link {
+    margin: 5px 0;
+  }
+}
+</style>
