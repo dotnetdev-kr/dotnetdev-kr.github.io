@@ -1,6 +1,9 @@
 theme: jekyll-theme-slate
 title: 닷넷데브 홈페이지
-description: 닷넷데브 홈페이지입니다.
+description: 대한민국 닷넷 개발자 커뮤니티
+author: 닷넷데브
+author_profile: true
+email: contact@dotnetdev.kr
 url: https://dotnetdev.kr
 
 # 글로벌 설정
