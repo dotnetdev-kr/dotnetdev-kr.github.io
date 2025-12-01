@@ -1,5 +1,8 @@
 <div class="site-header">
   <nav class="site-nav">
+    <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
     <div class="nav-links">
       <a href="/" class="nav-link">홈</a>
       <a href="/organizers/" class="nav-link">운영진</a>
@@ -13,9 +16,30 @@
   </nav>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    navToggle.addEventListener('click', function() {
+      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !isExpanded);
+      navLinks.classList.toggle('nav-open');
+    });
+
+    // 메뉴 링크 클릭 시 메뉴 닫기
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.setAttribute('aria-expanded', 'false');
+        navLinks.classList.remove('nav-open');
+      });
+    });
+  });
+</script>
+
 <style>
 .site-header {
-  background-color: #0078d7; /* Microsoft .NET 색상 */
+  background-color: #0078d7;
   padding: 12px 20px;
   margin-bottom: 20px;
 }
@@ -25,23 +49,58 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.nav-logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
+/* 햄버거 버튼 - 기본적으로 숨김 */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
 }
 
-.logo-img {
-  height: 40px;
-  width: auto;
-  transition: opacity 0.2s ease;
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: background-color 0.3s ease;
 }
 
-.logo-img:hover {
-  opacity: 0.8;
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* 햄버거 -> X 애니메이션 */
+.nav-toggle[aria-expanded="true"] .hamburger {
+  background-color: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger::before {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger::after {
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 .nav-links {
@@ -64,36 +123,55 @@
   border-radius: 5px;
 }
 
-.nav-external {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 5px;
-}
-
+/* 모바일 반응형 */
 @media (max-width: 768px) {
   .site-nav {
-    flex-direction: column;
-    gap: 15px;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 
   .nav-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .nav-link {
-    margin: 5px 8px;
-  }
-}
-
-@media (max-width: 480px) {
-  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
     flex-direction: column;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    border-top: 3px solid #0078d7;
+    z-index: 99;
   }
-  
+
+  .nav-links.nav-open {
+    max-height: 500px;
+    padding: 15px 0;
+  }
+
   .nav-link {
-    margin: 5px 0;
+    margin: 0;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    color: #0078d7;
+    border-bottom: 1px solid #e0e0e0;
   }
-}
+
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link:hover {
+    background-color: #f0f7ff;
+    border-radius: 0;
+  }
 }
 </style>
