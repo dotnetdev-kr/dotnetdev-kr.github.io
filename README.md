@@ -40,4 +40,3 @@ podman-compose down
 ## 라이선스
 
 이 저작물은 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 라이선스에 따라 이용할 수 있습니다.
-

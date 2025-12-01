@@ -6,6 +6,23 @@ author_profile: true
 email: contact@dotnetdev.kr
 url: https://dotnetdev.kr
 
+# 소셜 미디어 / Open Graph 설정
+locale: ko_KR
+logo: /resources/favicon/android-icon-192x192.png
+twitter:
+  card: summary
+  username: dotaboriya
+social:
+  name: 닷넷데브
+  links:
+    - https://github.com/dotnetdev-kr
+    - https://www.linkedin.com/company/96143755
+    - https://www.youtube.com/@dotnetdevkr
+
+# 플러그인
+plugins:
+  - jekyll-seo-tag
+
 # 글로벌 설정
 defaults:
   -
@@ -13,3 +30,4 @@ defaults:
       path: "" # 모든 파일에 적용
     values:
       layout: "default" # 모든 파일에 default 레이아웃 적용
+      image: /resources/favicon/android-icon-192x192.png

@@ -8,7 +8,7 @@
       <a href="/legal/" class="nav-link">법규</a>
       <a href="/coc/" class="nav-link">행동강령</a>
       <a href="/resources/" class="nav-link">리소스</a>
-      <a href="https://forum.dotnetdev.kr/" target="_blank" class="nav-link">닷넷데브 포럼</a>
+      <a href="https://forum.dotnetdev.kr/" target="_blank" class="nav-link nav-external">닷넷데브 포럼 ↗</a>
     </div>
   </nav>
 </div>
@@ -16,26 +16,45 @@
 <style>
 .site-header {
   background-color: #0078d7; /* Microsoft .NET 색상 */
-  padding: 10px 0;
+  padding: 12px 20px;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .site-nav {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+  transition: opacity 0.2s ease;
+}
+
+.logo-img:hover {
+  opacity: 0.8;
 }
 
 .nav-links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .nav-link {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 12px;
   padding: 5px 10px;
   font-weight: bold;
 }
@@ -45,7 +64,29 @@
   border-radius: 5px;
 }
 
-@media (max-width: 600px) {
+.nav-external {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .site-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-link {
+    margin: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
   .nav-links {
     flex-direction: column;
   }
@@ -53,5 +94,6 @@
   .nav-link {
     margin: 5px 0;
   }
+}
 }
 </style>

@@ -19,6 +19,7 @@
 
   <!-- GitHub Pages Slate 테마의 기본 레이아웃 시작 -->
   <div id="header_wrap" class="outer">
+    <div class="header-bg-logo"></div>
     <header class="inner">
       <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
@@ -30,6 +31,42 @@
       {% endif %}
     </header>
   </div>
+
+  <style>
+    #header_wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .header-bg-logo {
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 480px);
+      transform: translate(-50%, -50%);
+      width: 300px;
+      height: 300px;
+      background-image: url('/resources/dotnetdev-logo.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.15;
+      filter: blur(3px);
+      pointer-events: none;
+      z-index: 0;
+    }
+    
+    #header_wrap .inner {
+      position: relative;
+      z-index: 1;
+    }
+    
+    @media (max-width: 1024px) {
+      .header-bg-logo {
+        left: 0;
+        transform: translate(-20%, -50%);
+      }
+    }
+  </style>
 
   <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
