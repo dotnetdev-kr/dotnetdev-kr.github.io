@@ -1,0 +1,59 @@
+﻿@inherits LayoutComponentBase
+
+<div class="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-white/70 dark:bg-slate-950/70 border-b border-slate-200 dark:border-slate-800">
+        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-bold text-xl tracking-tight hover:opacity-80 transition-opacity">
+                <img src="/resources/favicon/favicon-96x96.png" alt="Logo" class="w-10 h-10">
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-400">
+                 <a href="/" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">홈</a>
+                 <a href="/organizers" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">운영진</a>
+                 <a href="/meetings" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">모임</a>
+                 <a href="/finance" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">재무현황</a>
+                 <a href="/legal" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">법규</a>
+                 <a href="/coc" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">행동강령</a>
+                 <a href="/resources" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors">리소스</a>
+                 <a href="https://forum.dotnetdev.kr" target="_blank" class="px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white rounded-full transition-colors font-semibold">닷넷데브 포럼 ↗</a>
+            </nav>
+
+            <!-- Mobile Menu Button (Placeholder) -->
+            <button class="lg:hidden p-2 text-slate-600 dark:text-slate-400" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Nav Menu (Simple Toggle) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800">
+            <nav class="flex flex-col p-4 space-y-4">
+                 <a href="/" class="block hover:text-brand-600 dark:hover:text-brand-400">홈</a>
+                 <a href="/organizers" class="block hover:text-brand-600 dark:hover:text-brand-400">운영진</a>
+                 <a href="/meetings" class="block hover:text-brand-600 dark:hover:text-brand-400">모임</a>
+                 <a href="/finance" class="block hover:text-brand-600 dark:hover:text-brand-400">재무현황</a>
+                 <a href="/legal" class="block hover:text-brand-600 dark:hover:text-brand-400">법규</a>
+                 <a href="/coc" class="block hover:text-brand-600 dark:hover:text-brand-400">행동강령</a>
+                 <a href="/resources" class="block hover:text-brand-600 dark:hover:text-brand-400">리소스</a>
+                 <a href="https://forum.dotnetdev.kr" target="_blank" class="block text-brand-600 font-bold">닷넷데브 포럼 ↗</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8">
+        @Body
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-100 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+        <div class="container mx-auto px-4 text-center text-slate-500 dark:text-slate-400 text-sm">
+            <p>&copy; @DateTime.Now.Year DotnetDevKr. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="/privacy" class="hover:underline">Privacy Policy</a> &middot;
+                <a href="/coc" class="hover:underline">Code of Conduct</a>
+            </p>
+        </div>
+    </footer>
+</div>

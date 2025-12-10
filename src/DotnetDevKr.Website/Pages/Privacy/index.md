@@ -1,0 +1,9 @@
+---
+$layout: DotnetDevKr.Website.Layout.MarkdownLayout
+url: "/privacy"
+---
+
+# 개인 정보 처리 방침
+
+- [컨퍼런스 개인 정보 처리 방침](./conference/)
+- [온라인 개인 정보 처리 방침](./online/)

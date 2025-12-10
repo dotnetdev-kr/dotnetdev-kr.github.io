@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand Palette based on #6e20a0 and #4d1877 */
+  --color-brand-50: #faf5ff;
+  --color-brand-100: #f3e8ff;
+  --color-brand-200: #e9d5ff;
+  --color-brand-300: #d8b4fe;
+  --color-brand-400: #c084fc;
+  --color-brand-500: #a855f7;
+  --color-brand-600: #9333ea;
+  --color-brand-700: #6e20a0;
+  --color-brand-800: #4d1877;
+  --color-brand-900: #3b0764;
+  --color-brand-950: #2a0449;
+
+  /* Typography - Professional Stack */
+  --font-sans: "Pretendard Variable", Pretendard, Inter, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  /* Refined spacing/radius for a cleaner look */
+  --radius-xl: 0.5rem;
+  /* Less rounded, more professional */
+  --radius-2xl: 0.75rem;
+}

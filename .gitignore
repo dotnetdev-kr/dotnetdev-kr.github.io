@@ -21,3 +21,6 @@ Thumbs.db
 
 # Docker
 docker-compose.override.yml
+css/app.css
+bin/
+obj/
