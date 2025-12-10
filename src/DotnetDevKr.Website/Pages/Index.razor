@@ -1,0 +1,82 @@
+@page "/"
+
+<PageTitle>홈 - 닷넷데브</PageTitle>
+
+<div class="space-y-16 pb-20">
+    <!-- Hero Section: Minimal Background -->
+    <section class="relative pt-32 pb-24 px-4 overflow-hidden">
+        <!-- Background Layer -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-slate-50/90 dark:bg-slate-950/90 z-10"></div> <!-- Tint -->
+            <img src="/resources/dotnet_hero.jpg" class="w-full h-full object-contain grayscale opacity-70 dark:opacity-40" alt="Background Texture" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-50 via-transparent to-transparent dark:from-slate-950 z-20"></div>
+        </div>
+
+        <div class="relative z-30 max-w-4xl mx-auto text-center space-y-8">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-slate-900 dark:text-white leading-tight">
+                Connect with <br/>
+                <span class="text-brand-700">Korean .NET Heroes</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-medium">
+                닷넷데브는 지식 공유와 동반 성장을 지향하는<br/>대한민국 대표 .NET 개발자 커뮤니티입니다.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-8">
+                <a href="https://forum.dotnetdev.kr" target="_blank" class="px-8 py-4 bg-brand-700 hover:bg-brand-800 text-white text-lg font-semibold rounded-lg transition-colors shadow-sm">
+                    포럼 참여하기
+                </a>
+                <a href="https://github.com/dotnetdev-kr" target="_blank" class="px-8 py-4 bg-white hover:bg-slate-50 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-700 text-lg font-semibold rounded-lg transition-colors">
+                    GitHub 프로젝트
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links Grid: Minimal Cards -->
+    <section class="container mx-auto px-4 max-w-5xl">
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Community Info -->
+            <div class="bg-slate-50 dark:bg-slate-900/50 p-8 rounded-xl border border-slate-100 dark:border-slate-800">
+                <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-700"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    커뮤니티
+                </h3>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="https://forum.dotnetdev.kr" class="flex items-center justify-between group p-2 -mx-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                            <span class="text-slate-700 dark:text-slate-300 font-medium">닷넷데브 포럼</span>
+                            <span class="text-slate-400 group-hover:text-brand-700">➜</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dotnetdev-kr" class="flex items-center justify-between group p-2 -mx-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                            <span class="text-slate-700 dark:text-slate-300 font-medium">GitHub Organization</span>
+                            <span class="text-slate-400 group-hover:text-brand-700">➜</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@@dotnetdevkr" class="flex items-center justify-between group p-2 -mx-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+                            <span class="text-slate-700 dark:text-slate-300 font-medium">YouTube 채널</span>
+                            <span class="text-slate-400 group-hover:text-brand-700">➜</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Activities -->
+            <div class="bg-slate-50 dark:bg-slate-900/50 p-8 rounded-xl border border-slate-100 dark:border-slate-800">
+                <h3 class="text-2xl font-bold mb-4 text-slate-900 dark:text-white flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-700"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    주요 활동
+                </h3>
+                <p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                    비정기적으로 개최되는 정기 모임과<br/>
+                    기술 세미나에 참여하세요.
+                </p>
+                <a href="https://dotnetuniverse.net/" class="inline-flex items-center text-brand-700 font-semibold hover:underline">
+                    닷넷 유니버스 확인하기 ➜
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

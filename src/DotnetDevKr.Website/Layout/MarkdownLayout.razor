@@ -1,0 +1,28 @@
+@inherits LayoutComponentBase
+@layout DotnetDevKr.Website.Layout.MainLayout
+
+<div class="markdown-body bg-transparent! dark:text-slate-100 dark:bg-transparent!">
+    <!-- 
+      .markdown-body applies the GitHub styles.
+      We override background to transparent to blend with our main layout's theme.
+      We ensure text color adapts if necessary, though github-markdown-css handles dark mode via media query usually.
+      To support manual dark mode toggling in the future, we might need 'markdown-body-dark' or similar, 
+      but for now we rely on the library's default behavior (system preference).
+    -->
+    @Body
+</div>
+
+<style>
+    /* Custom overrides for the markdown body to match our theme smoother if needed */
+    .markdown-body {
+        font-family: inherit !important; /* Use our Tailwind font stack */
+        background-color: transparent !important;
+    }
+    
+    /* Dark mode adjustments if system preference isn't enough (depending on how app.css handles it) */
+    @@media (prefers-color-scheme: dark) {
+        .markdown-body {
+             background-color: transparent !important;
+        }
+    }
+</style>
