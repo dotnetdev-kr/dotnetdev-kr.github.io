@@ -23,6 +23,13 @@ social:
 plugins:
   - jekyll-seo-tag
 
+# Jekyll이 Blazor 프로젝트의 마크다운/빌드 산출물까지 페이지로 처리하지 않도록 제외
+exclude:
+  - src/**/bin/**
+  - src/**/obj/**
+  - src/**/Pages/**
+  - src/**/wwwroot/**/*.md
+
 # 글로벌 설정
 defaults:
   -
