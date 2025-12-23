@@ -17,7 +17,9 @@ description: 닷넷데브에서 제공하는 리소스 모음
 | 닷넷데브 로고 (Adobe Illustrator CS5) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs5.ai) |
 | 닷넷데브 로고 (Adobe Illustrator CS6) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs6.ai) |
 | 닷넷데브 로고 (EMF) | Windows Enhanced Metafile 형식 | [다운로드](/resources/dotnetdev-logo.emf) |
-| .NET 히어로 이미지 | 닷넷데브 커버 이미지 | [다운로드](/resources/dotnet_hero.jpg) |
+| .NET 히어로 이미지 (PNG) | 닷넷데브 커버 이미지 (비트맵) | [다운로드](/resources/dotnet_hero.png) |
+| .NET 히어로 이미지 (SVG) | 편집 가능한 닷넷데브 커버 이미지 (벡터) | [다운로드](/resources/dotnet_hero.svg) |
+| .NET 히어로 이미지 (Adobe Illustrator CS6)| 닷넷데브 커버 이미지 | [다운로드](/resources/dotnet_hero-cs6.ai) |
 | 카드 이미지 | 소셜 미디어용 카드 이미지 | [다운로드](/resources/card.jpg) |
 
 ## 파비콘
