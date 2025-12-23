@@ -13,9 +13,9 @@ description: 닷넷데브에서 제공하는 리소스 모음
 | 리소스 | 설명 | 다운로드 링크 |
 |--------|------|--------------|
 | [로고 이미지 파일 (PNG)](/resources/dotnetdev-logo.png) | 닷넷데브 로고 (PNG) | [다운로드](/resources/dotnetdev-logo.png) |
+| 닷넷데브 로고 (JPG) | 닷넷데브 로고 (배경 채움, 프로필용) | [다운로드](/resources/dotnetdev-logo.jpg) |
 | 닷넷데브 로고 (SVG) | 벡터 형식의 로고 | [다운로드](/resources/dotnetdev-logo.svg) |
-| 닷넷데브 로고 (Adobe Illustrator CS5) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs5.ai) |
-| 닷넷데브 로고 (Adobe Illustrator CS6) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo-cs6.ai) |
+| 닷넷데브 로고 (Adobe Illustrator) | 편집 가능한 로고 파일 | [다운로드](/resources/dotnetdev-logo.ai) |
 | 닷넷데브 로고 (EMF) | Windows Enhanced Metafile 형식 | [다운로드](/resources/dotnetdev-logo.emf) |
 | .NET 히어로 이미지 | 닷넷데브 커버 이미지 | [다운로드](/resources/dotnet_hero.jpg) |
 | 카드 이미지 | 소셜 미디어용 카드 이미지 | [다운로드](/resources/card.jpg) |
