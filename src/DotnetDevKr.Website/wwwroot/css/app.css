@@ -777,11 +777,17 @@
       color: var(--color-white);
     }
   }
-  .dark\:opacity-40 {
+  .dark\:opacity-100 {
     @media (prefers-color-scheme: dark) {
-      opacity: 40%;
+      opacity: 100%;
     }
   }
+  .dark\:grayscale-invert {
+    @media (prefers-color-scheme: dark) {
+        --tw-invert: invert(1);
+    }
+  }
+  
   .dark\:hover\:bg-slate-700 {
     @media (prefers-color-scheme: dark) {
       &:hover {
