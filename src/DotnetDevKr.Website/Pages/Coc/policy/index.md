@@ -35,7 +35,7 @@ url: "/coc/policy"
 
 ### 2.2. 상황 보고서 작성
 
-- 사건 종료 후 당사자, 목격자, 조치 내용을 포함한 서면 보고서를 작성하여 운영진 이메일 <mailto:contact@dotnetdev.kr> 로 제출합니다.
+- 사건 종료 후 당사자, 목격자, 조치 내용을 포함한 서면 보고서를 작성하여 운영진 이메일([contact@dotnetdev.kr](mailto:contact@dotnetdev.kr))로 제출합니다.
 
 ## 3. 위기 상황별 실행 매뉴얼
 
