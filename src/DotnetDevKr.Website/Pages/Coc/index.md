@@ -8,3 +8,5 @@ url: "/coc"
 - [온라인 행동 규범](/coc/online)
 - [오프라인 행동 규범](/coc/offline)
 - [컨퍼런스 보안 대응 가이드라인](/coc/policy)
+- [채팅방 행동 규범](/coc/chat)
+- 
