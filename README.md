@@ -7,34 +7,19 @@
 
 ## 로컬 개발 환경
 
-이 사이트를 로컬에서 미리보려면 Podman을 사용하여 컨테이너를 실행할 수 있습니다.
+이 사이트를 로컬에서 미리보려면 .NET 10 SDK를 설치해야 합니다.
 
 ### 사전 요구사항
 
-- [Podman Desktop](https://podman-desktop.io/) 설치
-- Python 3.x 런타임 설치
-- `podman-compose` 설치: `pip install podman-compose`
+- [.NET SDK](https://dot.net/)
 
 ### 실행 방법
 
-```bash
-# 컨테이너 빌드 및 실행
-podman-compose up --build
-
-# 또는 백그라운드 실행
-podman-compose up -d --build
-```
-
-### 접속
-
-웹 브라우저에서 `http://localhost:4000` 접속
-
-LiveReload가 활성화되어 파일 수정 시 자동 새로고침됩니다.
-
-### 종료
+아래 명령어를 실행하여 표시되는 localhost 주소에 접속하면 웹 사이트를 미리 볼 수 있습니다.
 
 ```bash
-podman-compose down
+cd ./src/DotnetDevKr.Website
+dotnet run
 ```
 
 ## 라이선스
